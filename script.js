@@ -1,106 +1,83 @@
-/*
-JavaScript Assignment #6
-Switch Statement using prompt() and alert()
-*/
-
-// Step 2: Employee Role Access System
-let role = prompt("Enter your role (admin / manager / developer / intern):");
-
-switch (role.toLowerCase().trim()) {
+//Employee Role Access System
+let role = prompt("Enter your role (admin/manager/developer/intern):");
+switch (role.toLowerCase.trim()) {
   case "admin":
-    alert("Full system access");
-    break;
+    alert("Full Access");
 
+    break;
   case "manager":
-    alert("Team management access");
-    break;
-
+    alert("Team Managment Level Access");
   case "developer":
-    alert("Code access");
-    break;
-
+    alert("Code Access");
   case "intern":
-    alert("Limited access");
-    break;
+    alert("Limited Access");
 
   default:
-    alert("Invalid input. Please try again.");
+    alert("Invalid Input.Please Try Again.");
+    break;
 }
 
-// Step 3: Online Payment Method Selection
-let payment = prompt("Choose payment method (credit / debit / upi / cod):");
-
-switch (payment.toLowerCase().trim()) {
+//Online Payment Mehtod Selection
+let payment = prompt("Choose Payment Mehtod(credit/debit/api/cod:");
+switch (payment.toLowerCase.trim()) {
   case "credit":
-    alert("Credit card payment selected");
+    alert("Credit Card Selected.");
     break;
-
   case "debit":
-    alert("Debit card payment selected");
+    alert("Debit Card Selected.");
     break;
 
   case "upi":
-    alert("UPI payment selected");
-    break;
-
+    alert("Upi Selected");
   case "cod":
-    alert("Cash on delivery selected");
-    break;
-
+    alert("COD Selected");
   default:
-    alert("Invalid input. Please try again.");
+    alert("Invalid Input.Please Try Again.");
+    break;
 }
 
-// Step 4: Order Status Checker
-let status = prompt(
-  "Enter order status (placed / packed / shipped / delivered / cancelled):",
+//Order Status Checker
+let orderstatus = prompt(
+  "Enter order status(placed/packed/shipped/delivered/cancelled.",
 );
-
-switch (status.toLowerCase().trim()) {
+switch (orderstatus.toLowerCase.trim()) {
   case "placed":
-    alert("Your order has been placed.");
+    alert("Your Order is PLaced.");
     break;
-
   case "packed":
-    alert("Your order has been packed.");
+    alert("Your Order is Packed.");
     break;
-
   case "shipped":
-    alert("Your order has been shipped.");
+    alert("Your Order is Shipped.");
     break;
-
   case "delivered":
-    alert("Your order has been delivered.");
+    alert("Your Order is Delivered.");
     break;
-
   case "cancelled":
-    alert("Your order has been cancelled.");
+    alert("Your Order is Cancelled.");
     break;
-
   default:
-    alert("Invalid input. Please try again.");
+    alert("Invalid Input.Please Try Again.");
+    break;
 }
 
-// Step 5: Office Working Day Checker
-let day = prompt("Enter day name (Monday - Sunday):");
-
-switch (day.toLowerCase().trim()) {
+//Office Working Day Checker
+let workingday = prompt("Enter day name(Monday-Sunday)");
+switch (workingday.toLowerCase.trim()) {
   case "monday":
-  case "tuesday":
   case "wednesday":
   case "thursday":
   case "friday":
-    alert("Working day");
+    alert("Working Day");
     break;
-
   case "saturday":
-    alert("Half day");
+    alert("Half Day");
     break;
-
   case "sunday":
     alert("Holiday");
     break;
 
   default:
-    alert("Invalid input. Please try again.");
+    alert("Invalid Input.Please Try Again.");
+    break;
 }
